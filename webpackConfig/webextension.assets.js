@@ -131,7 +131,10 @@ const generateManifest = () => {
     default_locale: 'en',
     browser_specific_settings: {
       gecko: {
-        id: '{ceb9801e-aa0c-4bc6-a6b0-9494f3164cc7}',
+        id: 'roliascan-fix@samuelskovbakke.dev',
+        data_collection_permissions: {
+          required: ['authenticationInfo', 'websiteActivity'],
+        },
       },
     },
     background: appTarget === 'firefox' ?
